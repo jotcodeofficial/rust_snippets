@@ -1,7 +1,6 @@
 /// title: binary hex octal
 /// tags: binary hex octal hexadecimal 
 
-
 fn binary_hex_octal() {
     let number: usize = 536;
 

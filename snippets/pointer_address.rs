@@ -1,7 +1,6 @@
 /// title: pointer address
 /// tags: pointer address reference
 
-
 fn pointer_address() {
     let name = "jotcode";
     let reference_value = &vec![1, 2, 3];
