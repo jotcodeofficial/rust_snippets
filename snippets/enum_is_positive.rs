@@ -1,18 +1,16 @@
 /// title: enum is positive 
 /// tags: enum, positive, check
+use Number::*;
 
-use NUMBER::*;
-
-enum NUMBER {
+enum Number {
     I32(i32),
     U32(u32),
 }
 
-fn get_number(number: i32) -> NUMBER {
-    if number.is_positive() {
-        U32(number as u32)
-    } else {
-        I32(number)
+fn get_number(number: i32) -> Number {
+    match number.is_positive() {
+        true => U32(number as u32),
+        false => I32(number),
     }
 }
 
