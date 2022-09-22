@@ -15,7 +15,13 @@ fn hash_map() {
         friends: HashMap::new(),
     };
     
+    
     person_1.friends.insert("Sam".to_string(), 9);
+    person_1.friends.insert("Peter".to_string(), 2);
     
     println!("{:#?}", person_1);
+    
+    for (name, rating) in person_1.friends {
+        println!("name: {} \nrating: {}", name, rating);
+    }
 }
